@@ -23,7 +23,7 @@ public class RouteInfoResource {
 
 		ConnectedResponse connected = connectedService.getConnectedStatus(origin, destination);
 
-		return connected; // for best practice returning object which has yes or no
+		return connected; // for best practice returning object with 'yes' or 'no' property
 	}
 
 }
