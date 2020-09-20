@@ -20,11 +20,10 @@ public class RouteInfoResource {
 	@GetMapping("/connected")
 	public ConnectedResponse getConnectedStatus(@QueryParam(value = "origin") String origin,
 			@QueryParam(value = "destination") String destination) throws IOException {
-		
-		ConnectedResponse connected = connectedService.getConnectedStatus(origin, destination);
-		
-		return connected;
 
+		ConnectedResponse connected = connectedService.getConnectedStatus(origin, destination);
+
+		return connected; // for best practice returning object which has yes or no
 	}
 
 }

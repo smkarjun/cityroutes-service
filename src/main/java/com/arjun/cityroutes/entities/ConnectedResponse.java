@@ -8,7 +8,7 @@ public class ConnectedResponse {
 		this.connected = connected;
 	}
 
-	public ConnectedResponse() {	
+	public ConnectedResponse() {
 	}
 
 	public String getConnected() {
@@ -18,6 +18,4 @@ public class ConnectedResponse {
 	public void setConnected(String connected) {
 		this.connected = connected;
 	}
-	
-
 }
